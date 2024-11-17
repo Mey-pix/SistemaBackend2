@@ -1,4 +1,4 @@
-const url = 'https://sistema-backend-flax.vercel.app/categorias/';
+const url = 'https://sistema-backend2.vercel.app/categorias/';
 
 export async function gravar(categoria) {
     const res = await fetch(url,{

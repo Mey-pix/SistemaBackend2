@@ -71,11 +71,10 @@ function App() {
         <div className="App">
             <ContextoUsuario.Provider value={{ usuario, setUsuario }}>
                 {
-                    !usuario.logado ?
-                        <TelaLogin />
-                        :
+                    //!usuario.logado ?
+                        //<TelaLogin />
+                        //:
                         <BrowserRouter>
-                            {/* A ordem das rotas é importante */}
                             <Routes>
                                 <Route path="/" element={<TelaMenu />} />
                                 <Route path="/LP2-Backend" element={<TelaMenu />} />

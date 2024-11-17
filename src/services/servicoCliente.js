@@ -1,4 +1,4 @@
-const url = 'https://sistema-backend-flax.vercel.app/clientes/';
+const url = 'https://sistema-backend2.vercel.app/clientes/';
 
 export async function gravar(cliente) {
     const res = await fetch(url,{
