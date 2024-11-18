@@ -1,7 +1,7 @@
 {
   "name": "servidor",
   "version": "1.0.0",
-  "homepage": "https://Mey-pix.github.io/SistemasFrontend",
+  "homepage": "https://Mey-pix.github.io/SistemaFrontend",
   "description": "Exemplo de um servidor http",
   "main": "index.js",
   "type": "module",
