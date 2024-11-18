@@ -6,7 +6,11 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "echo Nenhum comando de teste foi especificado."
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "react": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "keywords": [
     "http",
@@ -22,6 +26,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "gh-pages": "^6.2.0",
     "mysql2": "^3.9.7"
   }
 }
