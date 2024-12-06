@@ -5,12 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "echo nenhum comando foi especificado",
-    "eject": "react-scripts eject"
+    "start": "node index.js"
   },
   "keywords": [
     "http",
