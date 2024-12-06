@@ -3,9 +3,8 @@
 
 import { Router } from "express"; //micro-aplicação HTTP
 import UsuarioCtrl from "../Controle/usuarioCtrl.js";
-import ProdutoCtrl from "../Controle/produtoCtrl.js";
 
-const usuaCtrl = new ProdutoCtrl();
+const usuaCtrl = new UsuarioCtrl();
 const rotaUsuario = Router();
 
 rotaUsuario.post("/", usuaCtrl.gravar);
