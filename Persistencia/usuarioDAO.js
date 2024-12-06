@@ -14,12 +14,12 @@ export default class UsuarioDAO {
             const conexao = await conectar(); 
             const sql = `
             CREATE TABLE IF NOT EXISTS usuario(
-                codigo INT NOT NULL AUTO_INCREMENT,
-                email VARCHAR(200) NOT NULL,
-                senha VARCHAR(200) NOT NULL,
-                nome VARCHAR(200) NOT NULL,
-                telefone VARCHAR(12) NOT NULL DEFAULT 0,
-                endereco VARCHAR(200),
+                usu_codigo INT NOT NULL AUTO_INCREMENT,
+                usu_email VARCHAR(200) NOT NULL,
+                usu_senha VARCHAR(200) NOT NULL,
+                usu_nome VARCHAR(200) NOT NULL,
+                usu_telefone VARCHAR(12) NOT NULL DEFAULT 0,
+                usu_endereco VARCHAR(200),
                 fk_codigo_priv INT NOT NULL,
                 CONSTRAINT pk_usuario PRIMARY KEY(usu_codigo),
                 CONSTRAINT fk_privilegio FOREIGN KEY(fk_codigo_priv) REFERENCES privilegio(codigo) 
