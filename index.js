@@ -6,7 +6,6 @@
 //vamos utilizar o padrão modular para importar os módulos
 //não esqueça de atualizar o arquivo package.json adicionando a chave "type":"module"
 import express from 'express';
-import rotaProduto from './Rotas/rotaProdutos.js';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import rotaCategoria from './Rotas/rotaCategoria.js';
@@ -43,7 +42,7 @@ app.use("/clientes",rotaCliente);
 app.use("/fornecedores", rotaFornecedor);
 app.use("/usuarios", rotaUsuario);
 app.use("/privilegios", rotaPrivilegio);
-
+app.use("/", (request, res)=>{res.send("Tamo on")});
 /*app.get('/',(requisicao, resposta)=>{
     resposta.send('<h1>Página principal</h1>');
     resposta.end();
